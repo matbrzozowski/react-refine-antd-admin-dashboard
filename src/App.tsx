@@ -12,7 +12,7 @@ import "@refinedev/antd/dist/reset.css";
 
 
 import { authProvider, dataProvider, liveProvider } from "./providers";
-import { Home, ForgotPassword, Login, Register, CompanyList, CompanyCreate } from "./pages"
+import { Home, ForgotPassword, Login, Register, CompanyList, CompanyCreate, CompanyEdit } from "./pages"
 
 import routerBindings, {
   CatchAllNavigate,
@@ -79,6 +79,7 @@ function App() {
                       <Route path="/companies"  >
                         <Route index  element={<CompanyList />}/>
                         <Route path="new"  element={<CompanyCreate />}/>
+                        <Route path="edit/:id"  element={<CompanyEdit />}/>
 
                       </Route>
 
