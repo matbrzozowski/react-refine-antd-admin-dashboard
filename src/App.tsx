@@ -25,6 +25,7 @@ import { App as AntdApp } from "antd";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import Layout from "./components/layout";
 import { resources } from "./config/resources";
+import TasksList from "./pages/tasks/list";
 
 
 
@@ -80,6 +81,13 @@ function App() {
                         <Route index  element={<CompanyList />}/>
                         <Route path="new"  element={<CompanyCreate />}/>
                         <Route path="edit/:id"  element={<CompanyEdit />}/>
+
+                      </Route>
+
+                      <Route path="/tasks"  >
+                        <Route index  element={<TasksList />}/>
+                        {/* <Route path="new"  element={<CompanyCreate />}/>
+                        <Route path="edit/:id"  element={<CompanyEdit />}/> */}
 
                       </Route>
 
