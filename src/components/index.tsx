@@ -26,4 +26,26 @@ export {    UpcomingEvents,
         
             DashboardTotalCountCard,
             DashboardLatestActivities,
+
         };
+
+// Accordion
+
+export * from "./accordion";
+
+// Forms
+
+export * from "./tasks/form/description"
+export * from "./tasks/form/due-date"
+export * from "./tasks/form/stage"
+export * from "./tasks/form/title"
+export * from "./tasks/form/users"
+export * from "./tasks/form/header"
+
+// Text
+
+export * from "./text"
+
+// User tag
+
+export * from './tags/user-tag';

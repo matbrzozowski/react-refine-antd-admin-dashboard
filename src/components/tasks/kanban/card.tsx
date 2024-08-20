@@ -96,12 +96,18 @@ const KanbanCard = ({ id, title, dueDate, users }: KanbanCardProps) => {
         <Card
             size="small"
             title={<Text ellipsis={{tooltip: title}}>{title}</Text>}
-            onClick={() => Edit()}
+            onClick={() => edit('tasks', id, 'replace')}
             extra={
                 <Dropdown
                     trigger={["click"]}
                     menu={{
                         items:dropdownItems,
+                        onPointerDown: (e) => {
+                            e.stopPropagation();
+                        },
+                        onClick: (e) => {
+                            e.domEvent.stopPropagation();
+                        }
                     }}
                     placement='bottom'
                     arrow={{ pointAtCenter: true }}
