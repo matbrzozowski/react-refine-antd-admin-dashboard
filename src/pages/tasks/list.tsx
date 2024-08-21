@@ -1,7 +1,7 @@
 import { KanbanColumnSkeleton, ProjectCardSkeleton } from '@/components'
 import KanbanAddCardButton from '@/components/tasks/kanban/add-card-button'
 import { KanbanBoard, KanbanBoardContainer } from '@/components/tasks/kanban/board'
-import KanbanCard, { KanbanCardMemo } from '@/components/tasks/kanban/card'
+import { KanbanCardMemo } from '@/components/tasks/kanban/card'
 import KanbanColumn from '@/components/tasks/kanban/column'
 import KanbanItem from '@/components/tasks/kanban/item'
 import { UPDATE_TASK_STAGE_MUTATION } from '@/graphql/mutations'
@@ -104,6 +104,7 @@ const TasksList = ({ children }: React.PropsWithChildren) => {
             replace(path);
           
     }
+    
 
     const handleOnDragEnd = (event: DragEvent) => {
         let stageId = event.over?.id as undefined | string | null;
