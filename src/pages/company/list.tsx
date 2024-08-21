@@ -8,12 +8,14 @@ import { Text } from '../../components/text'
 import React from 'react'
 import { Company } from '@/graphql/schema.types';
 import { currencyNumber } from '@/utilities';
+import { GetFieldsFromList } from '@refinedev/nestjs-query';
+import { CompaniesListQuery } from '@/graphql/types';
 
 export const CompanyList = ({ children }: React.PropsWithChildren) => {
 
   const go = useGo();
 
-  const { tableProps, filters } = useTable<Company, HttpError, Company>({
+  const { tableProps, filters } = useTable<GetFieldsFromList<CompaniesListQuery>, HttpError, GetFieldsFromList<CompaniesListQuery>>({
     resource: "companies",
     onSearch: (values) => {
       return [
