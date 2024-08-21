@@ -81,7 +81,7 @@ export const CompanyList = ({ children }: React.PropsWithChildren) => {
         }}
       >
         <Table.Column<Company>
-          dataIndex="name"
+          //dataIndex="name"
           title="Company Title"
           defaultFilteredValue={getDefaultFilter('id', filters)}  
           // @ts-expect-error Ant Design Icon's v5.0.1 has an issue with @types/react@^18.2.66
@@ -109,7 +109,7 @@ export const CompanyList = ({ children }: React.PropsWithChildren) => {
         />
 
         <Table.Column<Company> 
-          dataIndex="totalRevenue"
+          //dataIndex="totalRevenue"
           title="Open deals amount"
           render={(value, company) => (
             <Text>
@@ -119,7 +119,7 @@ export const CompanyList = ({ children }: React.PropsWithChildren) => {
         />
 
         <Table.Column<Company> 
-          dataIndex="id"
+          //dataIndex="id"
           title="Actions"
           fixed="right"
           render={(value) => (
