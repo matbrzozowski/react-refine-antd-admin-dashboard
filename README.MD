@@ -29,8 +29,8 @@ A powerful and customizable React admin dashboard built with Refine and AntD. Th
 * Vite
 
 ## Installation
-1.Prerequisites:
-* Node.js and npm (or yarn) installed on your system. You can download them from the official Node.js website: https://nodejs.org/en
+1. Prerequisites:
+Node.js and npm (or yarn) installed on your system. You can download them from the official Node.js website: https://nodejs.org/en
 
 2. Clone the repository:
 ```bash
