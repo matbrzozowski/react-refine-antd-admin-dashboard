@@ -1,49 +1,26 @@
-# react-admin-dashboard
+# React Admin Dashboard built with Refine and AntD
 
-<div align="center" style="margin: 30px;">
-    <a href="https://refine.dev">
-    <img alt="refine logo" src="https://refine.ams3.cdn.digitaloceanspaces.com/readme/refine-readme-banner.png">
-    </a>
-</div>
-<br/>
+## Project Description
+A powerful and customizable React admin dashboard built with Refine and AntD. This project provides essential features for managing companies, contacts, leads, and more, with a focus on user-friendly interfaces and robust authentication/authorization.
 
-This [Refine](https://github.com/refinedev/refine) project was generated with [create refine-app](https://github.com/refinedev/refine/tree/master/packages/create-refine-app).
+## Key Features
+* **Authentication:** Secure login, signup, and password recovery.
+* **Authorization:** Granular access control based on user roles and permissions.
+* **Home Page:** Interactive charts for key metrics, real-time updates, and a deals chart.
+* **Companies Page:** CRUD operations for company management, including profiles, contacts, and leads.
+* **Kanban Board:** Collaborative board with real-time updates and customization options.
+* **Account Settings:** Personalized user account management.
+* **Responsive Design:** Optimized for various screen sizes and devices.
 
-## Getting Started
+## Technology Stack
+* Refine
+* TypeScript
+* GraphQL
+* Ant Design
+* Codegen
+* Vite
 
-A React Framework for building internal tools, admin panels, dashboards & B2B apps with unmatched flexibility ✨
-
-Refine's hooks and components simplifies the development process and eliminates the repetitive tasks by providing industry-standard solutions for crucial aspects of a project, including authentication, access control, routing, networking, state management, and i18n.
-
-## Available Scripts
-
-### Running the development server.
-
+## Installation
+1. Clone the repository:
 ```bash
-    npm run dev
-```
-
-### Building for production.
-
-```bash
-    npm run build
-```
-
-### Running the production server.
-
-```bash
-    npm run start
-```
-
-## Learn More
-
-To learn more about **Refine**, please check out the [Documentation](https://refine.dev/docs)
-
-- **NestJS Query Data Provider** [Docs](https://refine.dev/docs/data/packages/nestjs-query/)
-- **Ant Design** [Docs](https://refine.dev/docs/ui-frameworks/antd/tutorial/)
-- **React Router** [Docs](https://refine.dev/docs/core/providers/router-provider/)
-- **Custom Auth Provider** [Docs](https://refine.dev/docs/core/providers/auth-provider/)
-
-## License
-
-MIT
+git clone [https://github.com/matbrzozowski/react-refine-antd-admin-dashboard.git](https://github.com/matbrzozowski/react-refine-antd-admin-dashboard.git)
