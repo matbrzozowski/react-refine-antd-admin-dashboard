@@ -1,5 +1,13 @@
 # React Admin Dashboard built with Refine and AntD
 
+**Checkout the live demo of the application hosted on Vercel [here](https://react-refine-antd-admin-dashboard-gtsx5kqlm.vercel.app/).**
+
+<br>
+
+![Product Edit Page](https://refine.ams3.cdn.digitaloceanspaces.com/example-readmes/CRM-Minimal/crm-demo.gif "Demo GIF")
+
+<br>
+
 ## Project Description
 A powerful and customizable React admin dashboard built with Refine and AntD. This project provides essential features for managing companies, contacts, leads, and more, with a focus on user-friendly interfaces and robust authentication/authorization.
 
@@ -21,6 +29,22 @@ A powerful and customizable React admin dashboard built with Refine and AntD. Th
 * Vite
 
 ## Installation
-1. Clone the repository:
+1.Prerequisites:
+* Node.js and npm (or yarn) installed on your system. You can download them from the official Node.js website: https://nodejs.org/en
+
+2. Clone the repository:
 ```bash
-git clone [https://github.com/matbrzozowski/react-refine-antd-admin-dashboard.git](https://github.com/matbrzozowski/react-refine-antd-admin-dashboard.git)
+git clone https://github.com/matbrzozowski/react-refine-antd-admin-dashboard.git
+```
+
+3. Install dependencies
+```bash
+cd react-refine-antd-admin-dashboard
+npm install
+```
+4. Start the development server:
+
+```bash
+npm run dev
+```
+Open your default web browser at http://localhost:5173 (the default port may vary). You should now see the running React admin dashboard application.
