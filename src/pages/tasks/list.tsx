@@ -11,6 +11,14 @@ import { useList, useUpdate, useNavigation } from '@refinedev/core'
 import { GetFieldsFromList } from '@refinedev/nestjs-query'
 import React from 'react'
 
+import type { DragEndEvent } from "@dnd-kit/core";
+
+type Props = {
+onDragEnd: (event: DragEndEvent) => void;
+};
+
+
+
 type Task = GetFieldsFromList<TasksQuery>
 type TaskStage = GetFieldsFromList<TaskStagesQuery> & { tasks: Task[] }
 
@@ -106,7 +114,7 @@ const TasksList = ({ children }: React.PropsWithChildren) => {
     }
     
 
-    const handleOnDragEnd = (event: DragEvent) => {
+    const handleOnDragEnd = (event: DragEndEvent) => {
         let stageId = event.over?.id as undefined | string | null;
         const taskId = event.active.id as string;
         const taskStageId = event.active.data.current?.stageId;

@@ -6,10 +6,12 @@ import { getDefaultFilter, type HttpError, useGo } from '@refinedev/core';
 import { Input, Space, Table } from 'antd';
 import { Text } from '../../components/text'
 import React from 'react'
-import { Company } from '@/graphql/schema.types';
+// import { Company } from '@/graphql/schema.types';
 import { currencyNumber } from '@/utilities';
 import { GetFieldsFromList } from '@refinedev/nestjs-query';
 import { CompaniesListQuery } from '@/graphql/types';
+
+type Company = GetFieldsFromList<CompaniesListQuery>;
 
 export const CompanyList = ({ children }: React.PropsWithChildren) => {
 
